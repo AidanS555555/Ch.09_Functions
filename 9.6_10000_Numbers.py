@@ -25,7 +25,7 @@ def create_list(c):
     for i in range(c):
         number=random.randint(1,6)
         my_list.append(number)
-        return my_list
+    return my_list
 
 
 
@@ -57,7 +57,7 @@ def count_list(list,c):
     for item in list:
         if item==c:
             count+=1
-        return count
+    return count
 '''
 Function #3: Write a function called average_list that returns the 
 average of the list passed into it. Once you've finished writing your
@@ -100,9 +100,9 @@ Now that the functions have been created, use them all in a main program that wi
 
 
 def my_program():
-    my_list=create_list(10000)
+    create_list(10000)
     print(average_list(my_list))
-    for i in range(1,7):
+    for i in range(7):
         print("There are", count_list(my_list,i), "amount of", i, "s")
 if __name__ == "__main__":
     my_program()
